@@ -1,13 +1,10 @@
-  },
-  "name": "primer_proyecto",
+{
+  "name": "primer-proyecto",
   "version": "1.0.0",
-  "description": "mi primer proyecto",
+  "description": "primer",
   "main": "index.html",
-  "devDependencies": {
-    "lite-server": "^2.6.1"
-  },
   "scripts": {
-    "dev": "lite-server"
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +16,11 @@
   "bugs": {
     "url": "https://bitbucket.org/stefany_coca/primer-proyecto/issues"
   },
-  "homepage": "https://bitbucket.org/stefany_coca/primer-proyecto#readme"
-}
+  "homepage": "https://bitbucket.org/stefany_coca/primer-proyecto#readme",
+  "dependencies": {
+    "portfolio": "^0.1.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
