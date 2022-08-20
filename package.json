@@ -1,23 +1,5 @@
 {
-  "name": "primer-proyecto",
-  "version": "1.0.0",
-  "description": "primer proyecto",
-  "main": "index.html",
-  "scripts": { 
-	  "dev": "lite-server"
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://Stefany_Coca@bitbucket.org/stefany_coca/primer-proyecto.git"
-  },
-  "author": "Stefany Coca",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://bitbucket.org/stefany_coca/primer-proyecto/issues"
-  },
-  "homepage": "https://bitbucket.org/stefany_coca/primer-proyecto#readme",
-  "devDependencies": {
-    "lite-server": "^2.6.1"
+  "dependencies": {
+    "puppeteer": "^16.2.0"
   }
 }
