@@ -1,0 +1,22 @@
+.jumbotrom {
+    background-color:black ;
+color:whitesmoke;
+margin-bottom: 10px;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.card-suplementos {
+    flex: 1 150px ;
+    padding: 2px 5px 2px 5px;
+    margin-top: 10px;
+}
+
+.boton-informacion {
+    width: 100%; 
+}
