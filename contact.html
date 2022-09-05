@@ -38,16 +38,55 @@
             <li class="breadcrumb-item active" aria-current="page"> Contacto</li>
         </ol>
     </nav>
-        <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Etiam ac velit at velit fringilla rhoncus.
-            Vivamus eget sapien a neque facilisis tempor cursus ac enim. 
-            Sed ullamcorper massa non tortor malesuada, et lobortis mi ultrices.
-            Nunc nec lorem et nisi scelerisque tincidunt quis sed lorem.
-            Aliquam vehicula enim in tincidunt consectetur.
-            Aliquam ac magna id nisl eleifend fringilla.
-            Fusce viverra turpis cursus, lacinia purus in, gravida tellus.
-        </span>
+      <h1>Comunica tus Comentarios</h1>
+      <form>
+      <div class="form row align-items-start">
+        <div class="form-group col">
+        <label for="nombre"> Nombre</label>
+        <input type="text" class="form-control" id="nombre"
+        placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group col">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido"
+            placeholder="Ingrese su apellido">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email"
+        placeholder="Ingrese su Email">
+        </div>
+        <div class="form row align-items">
+        <div class="form-group col">
+            <label for="direccion">Dirección</label>
+            <input type="text" class="form-control" id="direccion"
+            placeholder="Ingrese su direccion">
+        </div>
+        <div class="form-group col">
+            <label for="pais">Pais</label>
+            <select id="pais" class="form-control">
+                <option value="1">El Salvador</option>
+                <option value="2">Guatemala</option>
+                <option value="3">Honduras</option>
+                <option value="4">Costa Rica</option>
+                <option value="5">Panama</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comentario">Comentario</label>
+            <textarea  id="comentario" class="form-control" rows="10"></textarea>
+        </div>
+           <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Contactanos">
+            <label class="form-check-label" for="flexCheckDefault">
+             Deseo me contacten
+            </label> 
+          </div>
+          
+        <button type="submit" class="btn btn-outline-primary">Enviar</button>
+      </form>
 </div>
 
 <footer>
