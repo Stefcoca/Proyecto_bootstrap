@@ -1,7 +1,8 @@
 .jumbotrom {
     background-color:black ;
 color:whitesmoke;
-margin-bottom: 10px;
+margin-bottom: 5px;
+margin-top: 30px;
 }
 
 footer {
@@ -9,6 +10,8 @@ footer {
     color: whitesmoke;
     margin-bottom: 0px;
     margin-top: 15px;
+    padding-left: 15px;
+    padding-right:15px;
 }
 
 .card-suplementos {
@@ -21,3 +24,13 @@ footer {
     width: 100%; 
 }
 
+
+.footer-address-icon {
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.navbar {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
