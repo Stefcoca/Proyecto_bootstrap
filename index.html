@@ -42,20 +42,33 @@
         </ol>
     </nav>
 
-    <div class="d-flex">
+    <div class="row">
         <div class="col">
-            <h1>Nuestros Productos</h1>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#nuestros" aria-controls="multicollapse1" aria-expanded="false">Nuestos Productos</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#comprar" aria-controls="multicollapse2" aria-expanded="false">¿Comó puedo comprar?</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-controls="multicollapse2" aria-expanded="false">Metodos de Pago</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 collapse multi-collapse" id="nuestros">
+            <h3>Nuestros Productos</h3>
             <p>Distribuidores autorizados y solo marcas premium 100% originales.</p>
         </div>
-        <div class="col">
-            <h1>¿Comó puedo comprar?</h1>
+        <div class="col-sm-4 collapse multi-collapse" id="comprar">
+            <h3>¿Comó puedo comprar?</h3>
             <p>Tenemos habilitadas nuestras plataformar para que realices tus pedidos en linea, whatsapp, Instragram o Facebook</p>
         </div>
-        <div class="col">
-            <h1>Metodos de Pago</h1>
+        <div class="col-sm-4 collapse multi-collapse" id="pago">
+            <h3>Metodos de Pago</h3>
             <p>Aceptamos PayPal, Tranferencia Bancaria y Bitcoin </p>
         </div>
     </div>
+        
 
     <img class="img-fluid" src="Images/promo.png" alt="Responsive image">
 
@@ -82,7 +95,6 @@
         </div>
         <div class=" card card-suplementos d-flex flex-column justify-content-between m-lg-1">
                 <div class="card-body">
-                    <div class="card-header">Suplementos</div>
                     <h5 class="card-title">BCAAS</h5>
                     <img class="card-img-top" src="Images/bcaas.png" alt="bcaas img">
                     <p>Suplementos de apoyo a la recuperación muscular</p>
