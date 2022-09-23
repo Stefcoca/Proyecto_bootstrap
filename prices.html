@@ -107,21 +107,55 @@
         </table>
     </div>
     </div>
+    </div>
 
     <div class="Tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-    <div class="d-flex justify-content-center">
+    <div class="accordion" id="accordionTarjetas">
     <div class="card">
-    <div class="card-header"><strong>Tarjetas Aceptadas</strong></div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Tarjeta de Credito</li>
-        <li class="list-group-item">Tarjeta de Debito</li>
-        <li class="list-group-item">Tarjeta de Regalo</li>
-    </ul>
+    <div class="card-header" id="headingOne">
+    <h5 class="mb-0">
+        <button class="btn bnt-link" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseCredito" aria-expanded="true" aria-controls="collapseCredito">Tarjeta de Credito</button>
+    </h5>
     </div>
+    <div id="collapseCredito" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+    <div class="card-body">
+       Puedes adquirir pagos a 12 meses sin intereses     
+    </div>
+    </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+            <button class="btn bnt-link" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseDebito" aria-expanded="false" aria-controls="collapseDebito">Tarjeta de Debito</button>
+        </h5>
+        </div>
+        <div id="collapseDebito" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+        <div class="card-body">
+           Puedes pagar directamente con tu banco.     
+        </div>
+        </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingTree">
+            <h5 class="mb-0">
+                <button class="btn bnt-link" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseRegalo" aria-expanded="false" aria-controls="collapseRegalo">Tarjeta de Regalo</button>
+            </h5>
+            </div>
+            <div id="collapseRegalo" class="collapse" aria-labelledby="headingTree" data-parent="#accordionTarjetas">
+            <div class="card-body">
+               Puedes conseguir tarjetas de regalo, envia a tus seres queridos o guardala para luego.     
+            </div>
+            </div>
+            </div>
     </div>
     </div>
 </div>
-</div>
+
 <footer>
     <div class="row">
         <div class="col-sm-4 d-flex flex-column">

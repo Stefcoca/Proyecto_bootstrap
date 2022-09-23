@@ -75,19 +75,21 @@
     <div class="d-flex flex-wrap">
         <div class=" card card-suplementos d-flex flex-column justify-content-between m-lg-1">
             <div class="card-body"> 
-                <h5 class="card-title">Vitaminas</h5>
+                <h5 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="Existencias Limitadas">Vitaminas</h5>
                 <img class="card-img-top" src="Images/vitaminas.png" alt="vitamina img">
                 <p class="card-text">Suplementos que día a día el cuerpo requiere cantidades para seguir funcionando a un ritmo normal</p>
             </div> 
             <div>
-                <button type="button" class="btn btn-primary boton-informacion">Información</button>
+                <button type="button" class="btn btn-primary boton-informacion" 
+                data-bs-toggle="popover" data-bs-content="Existencias Limitadas">Información</button>
             </div>
         </div>
         <div class=" card card-suplementos d-flex flex-column justify-content-between m-lg-1">
             <div class="card-body">
-                <h5 class="card-title">Proteinas</h5>
+                <h5 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="Existencias Limitadas">Proteinas</h5>
                 <img class="card-img-top" src="Images/proteina.png" alt="proteina img">
                 <p>Suplementos para aumentar el consumo de proteina donde regularme el cuerpo requiere de un 30%-50% de la alimentación diaria</p>
+                
             </div>
             <div>
                 <button type="button" class="btn btn-primary boton-informacion">Información</button>
@@ -95,7 +97,7 @@
         </div>
         <div class=" card card-suplementos d-flex flex-column justify-content-between m-lg-1">
                 <div class="card-body">
-                    <h5 class="card-title">BCAAS</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="Existencias Limitadas">BCAAS</h5>
                     <img class="card-img-top" src="Images/bcaas.png" alt="bcaas img">
                     <p>Suplementos de apoyo a la recuperación muscular</p>
                 </div>
@@ -105,7 +107,7 @@
         </div>
         <div class="card card-suplementos d-flex flex-column justify-content-between m-lg-1">
                 <div class="card-body">
-                    <h5 class="card-title">Ganadores de peso</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="Existencias Limitadas">Ganadores de peso</h5>
                     <img class="card-img-top" src="Images/ganador de peso.png" alt="ganadores de peso img">
                     <p>Suplementos de apoyo al consumo de calorias para el aumento controlado de peso</p>
                 </div>
@@ -115,27 +117,57 @@
         </div>
         <div class="card card-suplementos d-flex flex-column justify-content-between m-lg-1">
             <div class="card-body">
-                    <h5 class="card-title">Quemadores de Grasa</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="Existencias Limitadas">Quemadores de Grasa</h5>
                     <img class="card-img-top" src="Images/quemador de grasa.png" alt="Quemadores img">
                     <p>Suplementos supresores de apetito y con un toque genial de energia para poder llevar acabo todo el ejercicio.</p>
-            </div>
+                </div>
             <div>
                     <button type="button" class="btn btn-primary boton-informacion">Información</button>
             </div>
         </div>
         <div class="card card-suplementos d-flex flex-column justify-content-between m-lg-1">
             <div class="card-body">
-                    <h5 class="card-title">Colágeno</h5>
+                    <h5 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="Existencias Limitadas">Colágeno</h5>
                     <img class="card-img-top" src="Images/colageno.png" alt="colageno img">
                     <p>Suplementos que refuerza las dosis necesarias para el fortalecimiento del cabello, uñas y piel.</p>
-            </div>
+                </div>
             <div>
                     <button type="button" class="btn btn-primary boton-informacion">Información</button>
             </div>
         </div>
     </div>
+    <h5>¿No encontraste lo que buscabas? Contactanos para conocer tus necesidades</h5>
+    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+    data-bs-target="#contacto">Contacto</button>
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contacto como Distribuidores</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Tu Correo:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Mensaje:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+        </div>
+      </div>
+    </div>
 
 </div>
+
 <footer>
 <div class="row">
     <div class="col-sm-4 d-flex flex-column">
@@ -161,5 +193,9 @@
 <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>$(function(){
+    $("[data-toggle='tooltip']").tooltip();
+    $("[data-toggle='popover']").popover();
+    });</script>
   </body>
 </html>
