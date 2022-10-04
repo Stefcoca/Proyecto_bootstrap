@@ -165,7 +165,7 @@
         </div>
     </div>
     <h5>¿No encontraste lo que buscabas? Contactanos para conocer tus necesidades</h5>
-    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+    <button type="button" class="btn btn-outline-success" id="contactobtn" data-bs-toggle="modal"
     data-bs-target="#contacto">Contacto</button>
     <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -225,6 +225,10 @@
     $("[data-bs-toggle='tooltip']").tooltip();
     $("[data-bs-toggle='popover']").popover();
     $('.carousel').carousel({Interval:2000});
-    });</script>
+    });
+    $('#contactobtn').on('show.bs.modal', function(event) {
+        console.log ("Mostrando Modal");
+    });
+    </script>
   </body>
 </html>
