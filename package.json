@@ -10,8 +10,8 @@
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "imagemin": "imagemin images/* --out-dir dist/images",
-    "usemin":"usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin prices.html -d dist --htmlmin -o dist/prices.html && usemin contact.html -d dist --htmlmin -o dist/contact.html",
-    "build":"npm run clean && npm run scss && npm run imagemin && npm run usemin"
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin prices.html -d dist --htmlmin -o dist/prices.html && usemin contact.html -d dist --htmlmin -o dist/contact.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -42,6 +42,8 @@
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "cssmin": "^0.4.3",
+    "grunt": "^1.5.3",
+    "grunt-contrib-sass": "^2.0.0",
     "htmlmin": "^0.0.7",
     "lite-server": "^2.6.1",
     "node-sass": "^7.0.3",
